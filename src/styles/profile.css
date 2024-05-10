@@ -1,0 +1,19 @@
+
+.container-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+.container-profile img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-color);
+    width: 200px;
+}
+
+@media (min-width: 992px) {
+    .container-profile img {
+        width: 320px;
+    }
+}

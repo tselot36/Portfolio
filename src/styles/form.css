@@ -1,0 +1,63 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    gap: 20px;
+    padding: 12px 5px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label,
+.form-input,
+.form-textarea {
+    font-size: 1.2em;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.form-input{
+    font-size: 1em;
+}
+
+.form-label {
+    padding: 5px;
+}
+
+.form-input {
+    border-radius: 12px;
+    border: 1px solid var(--secondary-color);
+    height: auto;
+    width: auto;
+    padding: 8px;
+}
+
+.form-textarea {
+    display: block;
+    border-radius: 12px;
+    width: auto;
+    height: 90px;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    box-shadow: 2px 2px 12px var(--secondary-color);
+}
+
+@media (min-width: 767px) {
+    .form {
+        padding: 12px;
+    }
+}

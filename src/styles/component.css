@@ -1,0 +1,21 @@
+
+.component-container,
+.split-component-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background: var(--background-color);
+    gap: 2.5em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.split-component-container {
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .split-component-container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}

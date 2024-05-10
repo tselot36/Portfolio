@@ -1,0 +1,74 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+.footer-container {
+    display: grid;
+    gap: 80px;
+    background-color: var(--primary-color);
+    margin: 20px;
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.footer-container p {
+    font-size: 1em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.footer-social-icon a {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 6px;
+    border: 1px solid var(--text-color);
+    transition: 0.3s, color 0.3s;
+    padding-top: 8px;
+}
+
+.footer-social-icon a i {
+    color: var(--text-color);
+    font-size: 28px;
+}
+
+.footer-social-icon a:hover {
+    background-color: var(--text-color);
+    opacity: 1;
+}
+
+.footer-social-icon a:hover i {
+    color: var(--primary-color);
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 150px;
+        padding: 80px;
+        justify-items: left;
+    }
+
+    .footer-container p {
+        font-size: 1.2em;
+    }
+}

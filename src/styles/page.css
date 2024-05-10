@@ -1,0 +1,19 @@
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    margin: 6em 3% 6em 3%;
+    gap: 8em;
+}
+
+@media (min-width: 767px) {
+    .page-container {
+        margin: 6em 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page-container {
+        gap: 10em;
+    }
+}

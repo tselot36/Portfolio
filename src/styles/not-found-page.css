@@ -1,0 +1,36 @@
+
+.container-not-found-page {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin: 3em 0;
+    gap: 1.5em;
+    overflow: hidden;
+}
+
+.container-not-found-page h1 {
+    font-size: 80px;
+}
+
+@media (min-width: 992px) {
+    .container-not-found-page {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 0 6em 0;
+        gap: 0;
+    }
+
+    .container-not-found-page > div:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+
+    .container-not-found-page h1 {
+        font-size: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-not-found-page h1 {
+        font-size: 180px;
+    }
+}
